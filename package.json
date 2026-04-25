@@ -2,14 +2,18 @@
   "name": "search-api2",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "cheerio": "^1.2.0",
+    "elysia": "latest",
+    "ofetch": "^1.5.1",
+    "playwright": "^1.59.1"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "prettier": "3.8.3"
   },
   "module": "src/index.js"
 }
