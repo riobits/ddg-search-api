@@ -1,4 +1,6 @@
-# Search API (DuckDuckGo Lite + Webshare Rotating Proxy)
+![DDG Search API Banner](./assets/thumbnail.png)
+
+# DDG Search API (DuckDuckGo Lite + Webshare Rotating Proxy)
 
 A lightweight Bun + Elysia API that queries DuckDuckGo Lite through a rotating proxy and returns normalized search results.
 
