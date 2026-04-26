@@ -18,7 +18,7 @@ interface SearchQuery {
   kp?: number; // Optional: The safe search level (0 = On, -1 = Moderate, -2 = Off)
 }
 
-async function search(q: SearchQuery): Promise<SearchResult[]> {
+async function search(searchQuery: SearchQuery): Promise<SearchResult[]> {
   try {
     const text = await ofetch(targetUrl, {
       proxy: Bun.env.WEBSHARE_ROTATING_PROXY!,
@@ -26,7 +26,7 @@ async function search(q: SearchQuery): Promise<SearchResult[]> {
       retry: 3,
       responseType: "text",
       method: "GET",
-      query: { q },
+      query: { ...searchQuery },
     });
 
     if (Bun.env.NODE_ENV === "development") {

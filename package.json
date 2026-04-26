@@ -1,5 +1,5 @@
 {
-  "name": "search-api2",
+  "name": "search-api",
   "version": "1.0.50",
   "scripts": {
     "dev": "bun run --watch src/index.ts",
@@ -8,8 +8,7 @@
   "dependencies": {
     "cheerio": "^1.2.0",
     "elysia": "latest",
-    "ofetch": "^1.5.1",
-    "playwright": "^1.59.1"
+    "ofetch": "^1.5.1"
   },
   "devDependencies": {
     "bun-types": "latest",

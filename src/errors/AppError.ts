@@ -1,8 +1,5 @@
 // 1. Centralized Error Codes Dictionary
 const ErrorCodes = {
-  // Browser Errors
-  BROWSER_NOT_SET: "BROWSER_NOT_SET",
-
   // System Errors
   INTERNAL_ERROR: "INTERNAL_ERROR",
 } as const;

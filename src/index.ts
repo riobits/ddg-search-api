@@ -19,10 +19,12 @@ const app = new Elysia()
         query: t.Object({
           q: t.String(),
           kl: t.Optional(t.String()),
-          kp: t.Numeric({
-            error: "kp must be 0, -1, or -2",
-            enum: [0, -1, -2],
-          }),
+          kp: t.Optional(
+            t.Numeric({
+              error: "kp must be 0, -1, or -2",
+              enum: [0, -1, -2],
+            }),
+          ),
         }),
       },
     );
